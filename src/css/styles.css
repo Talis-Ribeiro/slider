@@ -1,0 +1,59 @@
+.imagens-slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.imagens-slider .slide {
+  background-position: no-repeat center;
+  background-size: cover;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease-out;
+  display: flex;
+  align-items: center;
+}
+
+.imagens-slider .slide.mostrar {
+  opacity: 1;
+}
+
+.slide-rosa {
+  background-image: url(/src/images/imagem-rosa.png);
+}
+.slide-verde {
+  background-image: url(/src/images/imagem-verde.png);
+}
+.slide-laranja {
+  background-image: url(/src/images/imagem-laranja.png);
+}
+.slide-azul {
+  background-image: url(/src/images/imagem-azul.png);
+}
+
+.seta-voltar, .seta-avancar{
+  position: absolute;
+  z-index: 1;
+}
+
+.seta-voltar{
+  left: 4%;
+  transform: rotateY(180deg);
+}
+
+.seta-avancar{
+  right: 4%;
+}
+
+.seta-voltar .imagem-seta, .seta-avancar .imagem-seta{
+  width: 50px;
+  height: 50px;
+}
+
+.opacidade{
+  opacity: 0.6;
+  cursor: default;
+}
